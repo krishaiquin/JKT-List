@@ -21,6 +21,13 @@ p.textOne{
     text-align: center;
 }
 
+h2 {
+   font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center; 
+    color: #6B705C;
+}
+
 header, form {
     min-height: 20vh;
     display: flex;
@@ -84,4 +91,12 @@ color: #6B705C;
 
 .todo li {
     flex: 1;
+    padding: 8px;
+}
+
+.complete-btn {
+    background: #6B705C;
+    color: white;
+    padding: 5px;
+    border: none;
 }

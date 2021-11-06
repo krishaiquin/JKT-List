@@ -9,7 +9,7 @@ function addTodo(event) {
     const todoDiv = document.createElement('div');
     todoDiv.classList.add("todo");
     const newTodo = document.createElement('li');
-    newTodo.innerText = "hey";
+    newTodo.innerText = "buy a bigger brain";
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
 
