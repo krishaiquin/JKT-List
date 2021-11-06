@@ -61,3 +61,27 @@ height: 30px;
 color: #6B705C;
 }
 
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin: 5px;
+    background-color:#6B705C;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
