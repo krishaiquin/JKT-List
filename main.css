@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFE8D6;
+    color: #6B705C;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 18px;
+}
+
+p.textOne{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.todo-add-button, .todo-minus-button {
+    background-color: #6B705C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 10px;
+    padding: 6px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-add-button {
+    margin-left: 10px;
+}
+
+.todo-add-button:hover, .todo-minus-button:hover {
+    background: #CB997E;
+    color: #fff;
+}
+
+.todo-input {
+padding: 4px;
+font-size: 12px;
+border: none;
+background: #DDBEA9;
+width: 200px;
+height: 30px;
+color: #6B705C;
+}
+
