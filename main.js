@@ -2,8 +2,11 @@
 var items = [];
 const todoInput = document.querySelector(".todo-input");
 const todoAddButton = document.querySelector(".todo-add-button");
+const todoRemoveButton = document.querySelector(".todo-minus-button");
 const todoList = document.querySelector(".todo-list");
+
 todoAddButton.addEventListener("click", addTodo);
+todoRemoveButton.addEventListener("click", toRemove);
 
 function addTodo(event) {
     event.preventDefault();
@@ -27,6 +30,24 @@ function addTodo(event) {
     } else {
         //might change this
         window.alert(todoInput.value + " already exists!");
+    }
+    
+}
+
+function toRemove(event) {
+    event.preventDefault();
+    
+    todoList.addEventListener("click", removeTodo);
+    
+}
+    
+function removeTodo(event) {
+    const item = event.target;
+    
+    if (item.classList[0] === "todo-item") {
+        const todo = item.parentElement;
+        todo.remove();
+        todoList.removeEventListener("click", removeTodo);
     }
     
 }
