@@ -50,9 +50,17 @@ function removeTodo(event) {
         todo.classList.add("slide-out");
         todo.addEventListener("transitionend", function(){
             todo.remove();
+            
+            const index = items.indexOf(item.textContent);
+            if (index > -1) {
+                items.splice(index, 1);
+            }
         });
+
         todoList.removeEventListener("click", removeTodo);
     }
+
+    
     
 }
 
