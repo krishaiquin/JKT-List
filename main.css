@@ -87,6 +87,7 @@ color: #6B705C;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease;
 }
 
 .todo li {
@@ -99,4 +100,21 @@ color: #6B705C;
     color: white;
     padding: 5px;
     border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.slide-out {
+    transform: translateX(-10rem);
+    opacity: 0;
+}
+
+.fa-check-square {
+    pointer-events: none;
+}
+
+.check {
+    background: #7ad316;
+    text-decoration: line-through;
+    opacity: 0.5;
 }
